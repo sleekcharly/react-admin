@@ -5,6 +5,7 @@ import Contacts from './scenes/contacts';
 import Dashboard from './scenes/dashboard';
 import Sidebar from './scenes/global/Sidebar';
 import Topbar from './scenes/global/Topbar';
+import Invoices from './scenes/invoices';
 import Team from './scenes/team';
 import { ColorModeContext, useMode } from './theme';
 
@@ -29,6 +30,7 @@ export default function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
+              <Route path="/invoices" element={<Invoices />} />
             </Routes>
           </main>
         </div>
