@@ -1,6 +1,7 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Contacts from './scenes/contacts';
 import Dashboard from './scenes/dashboard';
 import Sidebar from './scenes/global/Sidebar';
 import Topbar from './scenes/global/Topbar';
@@ -27,6 +28,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
+              <Route path="/contacts" element={<Contacts />} />
             </Routes>
           </main>
         </div>
