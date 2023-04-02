@@ -1,6 +1,7 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Bar from './scenes/bar';
 import Contacts from './scenes/contacts';
 import Dashboard from './scenes/dashboard';
 import Form from './scenes/form';
@@ -33,6 +34,7 @@ export default function App() {
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
+              <Route path="/bar" element={<Bar />} />
             </Routes>
           </main>
         </div>
