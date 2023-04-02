@@ -8,6 +8,7 @@ import Form from './scenes/form';
 import Sidebar from './scenes/global/Sidebar';
 import Topbar from './scenes/global/Topbar';
 import Invoices from './scenes/invoices';
+import Pie from './scenes/pie';
 import Team from './scenes/team';
 import { ColorModeContext, useMode } from './theme';
 
@@ -35,6 +36,7 @@ export default function App() {
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
               <Route path="/bar" element={<Bar />} />
+              <Route path="/pie" element={<Pie />} />
             </Routes>
           </main>
         </div>
